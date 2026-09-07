@@ -117,8 +117,12 @@ export function buscarPorNombre(
     alumnos: Alumno[],
     nombre: string
 ): Alumno | undefined {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+     const resultado = alumnos.find(alum => alum.nombre === nombre);
+    if (resultado) {
+        return resultado;
+    }
+    return undefined;
 }
 
 // -----------------------------------------------------------------------------

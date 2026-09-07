@@ -71,7 +71,10 @@ export function obtenerAprobados(alumnos: Alumno[]): Alumno[] {
 // Si el arreglo está vacío, devolver 0.
 export function calcularPromedio(alumnos: Alumno[]): number {
     // TODO
-    throw new Error("Implementar");
+    if (alumnos.length === 0) {
+        return 0;
+    }
+    return alumnos.reduce((sum, alumno) => sum + alumno.nota, 0) / alumnos.length;
 }
 
 // -----------------------------------------------------------------------------

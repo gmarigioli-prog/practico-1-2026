@@ -70,7 +70,7 @@ export function obtenerAprobados(alumnos: Alumno[]): Alumno[] {
 //
 // Si el arreglo está vacío, devolver 0.
 export function calcularPromedio(alumnos: Alumno[]): number {
-    // TODO
+    // COMPLETADO
     if (alumnos.length === 0) {
         return 0;
     }
@@ -83,8 +83,12 @@ export function calcularPromedio(alumnos: Alumno[]): number {
 // Devolver el alumno que tenga la nota más alta.
 // Si el arreglo está vacío, devolver undefined.
 export function obtenerMejorAlumno(alumnos: Alumno[]): Alumno | undefined {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    if (alumnos.length === 0) {
+        return undefined;
+    }
+    const NotasOrdenadas = alumnos.sort((a, b) => b.nota - a.nota);
+    return NotasOrdenadas[0];
 }
 
 // -----------------------------------------------------------------------------

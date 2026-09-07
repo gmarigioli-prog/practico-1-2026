@@ -100,8 +100,12 @@ export function buscarPorLegajo(
     alumnos: Alumno[],
     legajo: number
 ): Alumno | undefined {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    const resultado = alumnos.find(alum => alum.legajo === legajo);
+    if (resultado) {
+        return resultado;
+    }
+    return undefined;
 }
 
 // -----------------------------------------------------------------------------

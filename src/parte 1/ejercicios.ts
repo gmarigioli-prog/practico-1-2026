@@ -27,7 +27,7 @@ import { alumnos, type Alumno } from "../models/db.js";
 // obtenerNombres(alumnos)
 // -> ["Juan", "María", "Pedro", ...]
 export function obtenerNombres(alumnos: Alumno[]): string[] {
-    // TODO
+    // COMPLETADO
     return alumnos.map(alumno => alumno.nombre);
 }
 
@@ -39,8 +39,8 @@ export function obtenerNombres(alumnos: Alumno[]): string[] {
 // Ejemplo:
 // ["Juan Pérez", "María García", ...]
 export function obtenerNombresCompletos(alumnos: Alumno[]): string[] {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    return alumnos.map(alumno => alumno.nombre + " " + alumno.apellido);
 }
 
 // -----------------------------------------------------------------------------
@@ -48,8 +48,8 @@ export function obtenerNombresCompletos(alumnos: Alumno[]): string[] {
 // -----------------------------------------------------------------------------
 // Devolver solamente los alumnos que tengan 18 años o más.
 export function obtenerMayoresDeEdad(alumnos: Alumno[]): Alumno[] {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    return alumnos.filter(alumno => alumno.edad >= 18);
 }
 
 // -----------------------------------------------------------------------------

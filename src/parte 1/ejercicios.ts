@@ -174,8 +174,8 @@ export function obtenerAlumnosDeCiudad(
     alumnos: Alumno[],
     ciudad: string
 ): Alumno[] {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    return alumnos.filter(alumno => alumno.ciudad === ciudad);
 }
 
 // -----------------------------------------------------------------------------

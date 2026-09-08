@@ -141,8 +141,8 @@ export function existeDesaprobado(alumnos: Alumno[]): boolean {
 // Devolver true solamente si todos los alumnos tienen nota mayor o igual a 6.
 // Resolver utilizando every.
 export function todosAprobaron(alumnos: Alumno[]): boolean {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    return alumnos.every(alum => alum.nota >= 6)
 }
 
 // -----------------------------------------------------------------------------

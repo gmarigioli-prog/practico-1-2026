@@ -264,8 +264,8 @@ export function calcularTotal(
     alumnos: Alumno[],
     callback: (alumno: Alumno) => number
 ): number {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    return alumnos.reduce((sum, alumno) => sum + callback(alumno), 0);
 }
 
 // -----------------------------------------------------------------------------

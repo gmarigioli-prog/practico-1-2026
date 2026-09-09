@@ -323,11 +323,17 @@ export interface Estadisticas {
     mejorAlumno: Alumno | undefined;
 }
 
+// COMPLETADO
 export function obtenerEstadisticas(
     alumnos: Alumno[]
-): Estadisticas {
-    // TODO
-    throw new Error("Implementar");
+): Estadisticas { 
+    return {
+        cantidadTotal: (alumnos.length),
+        cantidadAprobados: obtenerAprobados(alumnos).length,
+        cantidadDesaprobados: (alumnos.filter(alumno => alumno.nota < 6)).length,
+        promedio:calcularPromedio(alumnos),
+        mejorAlumno: obtenerMejorAlumno(alumnos)
+    }
 }
 
 // -----------------------------------------------------------------------------

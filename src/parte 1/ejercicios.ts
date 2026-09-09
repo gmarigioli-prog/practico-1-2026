@@ -227,8 +227,8 @@ export function filtrar<T>(
     elementos: T[],
     callback: (elemento: T) => boolean
 ): T[] {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    return elementos.filter(callback);
 }
 
 // -----------------------------------------------------------------------------

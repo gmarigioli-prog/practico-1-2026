@@ -210,8 +210,8 @@ export function transformar<T, R>(
     elementos: T[],
     callback: (elemento: T) => R
 ): R[] {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    return elementos.map(callback);
 }
 
 // -----------------------------------------------------------------------------

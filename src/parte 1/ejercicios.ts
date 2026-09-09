@@ -286,8 +286,21 @@ export function calcularTotal(
 export function agruparPorCiudad(
     alumnos: Alumno[]
 ): Record<string, Alumno[]> {
-    // TODO
-    throw new Error("Implementar");
+    // COMPLETADO
+    return alumnos.reduce<Record<string, Alumno[]>>(
+        (grupos, alumno) => {
+            const ciudad = alumno.ciudad
+
+            // Si no hay resultado, crea un array vacio
+            if (!grupos[ciudad]) {
+                grupos[ciudad] = [];
+            }
+            // Agrega el alumno al array
+            grupos[ciudad].push(alumno);
+            return grupos;
+        },
+        {} // Objeto vacío como acumulador de reduce
+    )
 }
 
 // -----------------------------------------------------------------------------

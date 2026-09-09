@@ -243,6 +243,11 @@ export function buscar<T>(
     callback: (elemento: T) => boolean
 ): T | undefined {
     // TODO
+     const resultado = elementos.find(callback);
+    if (resultado) {
+        return resultado;
+    }
+    return undefined;
     throw new Error("Implementar");
 }
 

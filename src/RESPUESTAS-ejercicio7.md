@@ -5,16 +5,16 @@
 
 ## ¿Qué permite hacer `interface` que `type` no (o no tan bien)?
 
-_(tu respuesta)_
+interface permite declaration merging, type no.
 
 ## ¿Qué permite hacer `type` que `interface` no?
 
-_(tu respuesta — pensá en uniones, tuplas, tipos primitivos con alias, mapped types)_
+type permite crear uniones de tipos, tuplas, alias para datos primitivos y transformaciones avanzadas
 
 ## ¿Ambas se pueden extender? ¿Cómo se hace en cada caso?
 
-_(tu respuesta)_
+si, interface se extiende usando extends y type con &
 
 ## ¿Cuál elegirían para representar una entidad del dominio (por ejemplo, `Alumno`)? ¿Por qué?
 
-_(tu respuesta)_
+eligiria interface porque es la ams comun en ts para objetos y entidades 

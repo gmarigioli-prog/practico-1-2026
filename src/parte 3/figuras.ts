@@ -19,14 +19,15 @@ export class Circulo extends Figura {
 
     calcularArea(): number {
         // TODO: área = π * radio²
-        throw new Error("Implementar");
+        return Math.PI * (this.radio * this.radio);
     }
 
     calcularPerimetro(): number {
         // TODO: perímetro (circunferencia) = 2 * π * radio
-        throw new Error("Implementar");
+        return 2 * Math.PI * this.radio;
     }
-}
+    }
+
 
 export class Rectangulo extends Figura {
     constructor(
@@ -38,12 +39,12 @@ export class Rectangulo extends Figura {
 
     calcularArea(): number {
         // TODO: área = base * altura
-        throw new Error("Implementar");
+        return this.base * this.altura;
     }
 
     calcularPerimetro(): number {
         // TODO: perímetro = 2 * (base + altura)
-        throw new Error("Implementar");
+        return 2 * (this.base + this.altura);
     }
 }
 
@@ -54,11 +55,12 @@ export class Cuadrado extends Figura {
 
     calcularArea(): number {
         // TODO: área = lado²
-        throw new Error("Implementar");
+        return this.lado * this.lado;
     }
 
     calcularPerimetro(): number {
         // TODO: perímetro = 4 * lado
-        throw new Error("Implementar");
+        return 4 * this.lado;
     }
 }
+    
